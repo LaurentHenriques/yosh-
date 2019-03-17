@@ -190,7 +190,7 @@ padding-top: 15%;
 /* media */
 @media screen and (min-width: 200px) and (max-width: 990px) {
   .text12 {
-    font-size: 3.1vh;
+    font-size: 3.8vh;
 	}
 	.border2 {
 		display: none;
