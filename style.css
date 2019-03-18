@@ -1,4 +1,5 @@
 
+
 @font-face{
     font-family: "mariolettre";
     src : url("polices/lettremario.ttf");
@@ -206,22 +207,26 @@ padding-top: 15%;
 	}
 
 
-.connexion {
-	
-	height: 4%;
-	
+ .connexion {
+	text-transform: uppercase;
+	background: linear-gradient(to right,  green, yellow 100%) !important;
+	background: transparent !important;
+	border: none !important;
+	color:  #DC143C  !important;
+
+}
+
+
+.inscription {
+	text-transform: uppercase;
+	background: linear-gradient(to right,  green, yellow 100%) !important;
+	background: transparent !important;
+	border: none !important;
+	color:  yellow  !important;
+
 }
 }
 /* btn */
-.connexion {
-	position: absolute;
-	right: 1%;
-	top: 0%;
-	z-index: 1000;
-	padding: 10px;
-	height: 5%
-	
-}
 
 .join {
 	font-size: 2.2vh;
