@@ -1,4 +1,4 @@
-       <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="fr">
 <head>
   <title>Yoshi save the baby</title>
@@ -29,7 +29,7 @@
 			<div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
     <ul class="navbar-nav  text-right">
 			
-						<a class="mx-auto"  style="background-color: transparent" href="#">
+						<a class="mx-auto"  style="background-color: transparent; padding-right: 4px;" href="#">
 							
 							<img src="images/frenchflag.png" class="rounded-circle andtest">
 						</a>
@@ -77,17 +77,21 @@
 							
 					</ul>
 					<ul class="navbar-nav  text-left">
+							<a class="mx-auto"  style="background-color: transparent" href="#">
+							
+									<a href="#" class="btn btn-warning btn-lg active inscription" id="pts"  style="color: black;" role="button" aria-pressed="true">0 pts</a>
+								</a>
 			
 						<a class="mx-auto"  style="background-color: transparent" href="#">
 							
-							<a href="#" class="btn btn-danger btn-lg active inscription" role="button" aria-pressed="true">Inscription</a>
+							<a href="#" class="btn btn-danger btn-lg active inscription" onclick="document.getElementById('id011').style.display='block'" role="button" aria-pressed="true">Inscription</a>
 						</a>
 						
 						<a class="mx-auto" style="background-color: transparent" href="#">
 							
-							<a href="#" class="btn btn-primary btn-lg active connexion" role="button" aria-pressed="true">Connexion</a>
+							<a href="#" class="btn btn-primary btn-lg active connexion" onclick="document.getElementById('id01').style.display='block'" role="button" aria-pressed="true">Connexion</a>
 							</a>
-						
+			
 				
 		</ul>
 			
@@ -95,66 +99,83 @@
 					
 			</div>
 	</nav>
-				</form>
-			</div>
-		</nav>
+			
 		
 		<div class="container2">
 			
 					            
 				
       
-                      <p class="text12 heartbeat">Aide Yoshi a sauver son bebe dans cette toute nouvelle aventure, affronte l'enigmatique Bowser et remonte la piste jusqu'a Baby Yoshi !</p>
+                      <p class="text12 heartbeat">Aide Yoshi a sauver son bebe dans cette toute nouvelle aventure, affronte le terrible Bowser et remonte la piste jusqu'a Baby Yoshi !</p>
 								
                     
-											<a href="#" class="btn btn-danger btn-lg active join" role="button" aria-pressed="true">Rejoins-nous !</a>
+											<a href="jeu.html" class="btn btn-danger btn-lg active join" o role="button" aria-pressed="true">Rejoins-nous !</a>
 										
 </div>
 				
 						
 							  
-									
-									
-		
-		
+
 			
- 
-		
-		
+	
+<div id="id01" style="z-index: 1000;" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
 
-		
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- Modal Content -->
   
+    
 
+    <div class="container" style="background-color:#0062cc;">
+      <label for="uname"><b>Nom d'utilisateur</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
 
+      <label for="psw"><b>Mot de passe</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
 
+      <button type="submit">Se connecter</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#0062cc;">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Annuler</button>
+      <span class="psw">Mot de passe <a href="#" style="color: black;">oublie ?</a></span>
+    </div>
   
+</div> 	
+
+
+
+
+<div id="id011" style="z-index: 1000;" class="modal">
+		<span onclick="document.getElementById('id011').style.display='none'"
+	class="close" title="Close Modal">&times;</span>
+	
+		<!-- Modal Content -->
+	
+	
+			<div class="container" style="background-color: #bd2130;">
+				<label for="uname"><b>Email</b></label>
+				<input type="text" placeholder="Enter email" name="uname" required>
+	
+				<label for="psw"><b>Mot de passe</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+	
+				<button type="submit">Inscription</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+				</label>
+			</div>
+	
+			<div class="container" style="background-color: #bd2130;">
+				<button type="button" onclick="document.getElementById('id011').style.display='none'" class="cancelbtn">Annuler</button>
+				
+			</div>
 		
-                
-                
-                   
-                 
-              
-               
-           
-                
-
-
+	</div> 
+	</div>					
 </body>
 	<script  src="js/menu.js"></script>
 </html>
